@@ -1,7 +1,10 @@
+/* --------------------
+    OUR MISSION
+--------------------- */
 
 .bg {
-  background: url("images/underwater-cropped.jpg") no-repeat top;
-  position: fixed;
+  background: linear-gradient(60deg, rgba(18, 25, 43, 0.075), rgba(18, 25, 43, 0.089), rgba(255, 255, 255, 0.116), transparent), url("images/underwater-cropped.jpg") no-repeat top;
+  position: absolute;
   background-size: cover;
   width: 100%;
   height: 600px;
@@ -14,29 +17,19 @@
   opacity: 0.9;
 }
 
+
 /* --------------
       NAVBAR
 --------------- */
 
 .jumbotron {
   margin-bottom: 50px;
-  max-height: 600px;
+  height: 600px;
   color:#12192B;
   background: transparent;
   padding-top: 10px;
-
-  /* width: 100%;
-  height: 100%;
-  max-height: 600px; */
-  /* background: url("images/underwater.jpg") center;
-  background-size: cover;
-  position: fixed; */
-  /* background-attachment: fixed; */
-  /* margin: 0;
-  padding: 0;
-  top: 0; */
-}
-
+  width: 100%;
+  
 .navbar {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 400;
@@ -49,7 +42,7 @@
   align-content: center;
   height: 100%;
   width: 100%;
-  margin: 20px 0px 0px 0px;
+  margin: 20px 0px 35px 0px;
 }
 
 .navbar-light {
@@ -101,7 +94,7 @@
 .navbar-nav {
   margin: 0px 0px 0px 0px;
   padding: 0;
-  display: flex;
+  display: contents;
   justify-content: right;
   width: 100%;
 }
@@ -109,9 +102,14 @@
 .navbar-collapse {
   position: relative;
   display: grid;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-content: center;
-  margin: 0px 0px 0px 90px;
+  margin: 0px 0px 0px 0px;
+}
+
+.show {
+  background-color: white;
+  z-index: 1;
 }
 
 
@@ -143,10 +141,9 @@
   display: -webkit-box;
   justify-content: center;
   background: none;
-  margin: 0px 10px 0px 10px; 
+  margin: 0px 15px 0px 10px; 
   transition: color .3s ease;
 }
-
 
 
 .navbar-nav > li > a:before {
@@ -214,7 +211,6 @@
   float: right;
   position: relative;
   display: inline-block;
-  float: right;
   transition: background-color 0.3s ease-in;
 }
 
@@ -223,21 +219,10 @@
   background-color: #2D55a4; 
 }
 
-/* .nav-link:hover {
-  color: #333333;
-  font-weight: 700;
-  box-shadow: 0 -4px 0 #CEE5E3 inset;
-  transition: 0.2s;
-} */
-
-.row {
-  margin: 5% 5% 5% 5%;
-}
-
 .navbar img {
   width: 200px;
   height: auto;
-  margin: 0px 0px 0px 30px;
+  margin: 0px 0px 0px 0px;
 }
 
 .card {
@@ -257,7 +242,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
   color: #2D55A4;
 }
 
@@ -280,15 +265,15 @@
   }
 
 .btn-get-involved {
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     display: block;
     padding: 3% 20%;
     margin: 30px 0px 0px 0px;
+    border-radius: 0px;
     color: #fff;
     background-color: #3270EC;
-    width: 100%;
+    width: 90%;
+    min-width: 200px;
     transition: background-color .3s ease;
 }
   
@@ -299,7 +284,7 @@
   }
 
 /*--------------------------------------------------------------
-# General
+      GENERAL
 --------------------------------------------------------------*/
 body {
     background: #fff;
@@ -307,6 +292,11 @@ body {
     font-family: brandon-grotesque, sans-serif;
     font-weight: 400;
     font-style: normal;
+    background: url("images/pattern-faded.svg");
+    background-size: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   a {
@@ -316,21 +306,297 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 400;
-    margin: 0 0 0px 0;
+    margin: 0 0 0 0;
     padding: 0;
   }
 
-  .container {
-    align-content: center;
-    justify-content: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-    animation: fade 3s ease-in 1;
+.header {
+  font-size: 35px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+}
+
+.container {
+  background: transparent;
+  align-content: center;
+  justify-content: flex-start;
+  display: block;
+  flex-wrap: wrap;
+  animation: fade 3s ease-in 1;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  background: #e8e8e8;
+  width: 80%;
+  margin: 40px;
+}
+
+.row {
+  margin: 2% 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
   }
 
-  
-/* RESPONSIVE */
+.btn {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  min-height: 45px;
+  max-height: 50px;
+  }
 
+
+/* --------------------
+    OUR MISSION
+--------------------- */
+.body-container{
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  background-color: transparent;
+}
+
+.section-container {
+  background-color: white;
+  font-size: 28px;
+  line-height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 3px;
+  width: 100%;
+}
+
+.mission-statement {
+  padding: 0% 2% 0% 5%;
+  font-size: 24px;
+}
+
+.mission-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mission-data {
+  font-size: 12px;
+  font-weight: bold;
+  width: 100%;
+  position: relative;
+  display: block;
+  text-align: center;
+  line-height: 20px;
+}
+
+.stats-header {
+  font-size: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+.row-stats {
+  height: 150px;
+  padding: 0% 5% 0% 2%;
+  width: 90%;
+}
+
+/* --------------------
+    OUR STORY
+--------------------- */
+
+.story img{
+  width: 70%;
+  height: 70%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.story-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* --------------------
+    OUR IMPACT
+--------------------- */
+
+.btn-learn-story {
+  font-size: 20px;
+  display: block;
+  padding: auto;
+  margin: 30px 0px 30px 0px;
+  height: 50px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0px;
+  color: #fff;
+  background-color: #3270EC;
+  transition: background-color .3s ease;
+}
+
+.btn-learn-story:hover{
+  color: white;
+  background-color: #2D55a4; 
+}
+
+.btn-learn-impact {
+  font-size: 20px;
+  display: block;
+  padding: 1% 8%;
+  margin: 30px 0px 10px 0px;
+  height: 50px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 150px;
+  border-radius: 0px;
+  color: #fff;
+  background-color: #3270EC;
+  transition: background-color .3s ease;
+}
+
+.btn-learn-impact:hover{
+  color: white;
+  background-color: #2D55a4; 
+}
+
+.impact {
+  height: 100%;
+  align-items: center;
+  background: url("images/buildings.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 500px;
+  top: 0;
+  margin: 5% 10%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.impact-card {
+  height: 100%;
+}
+
+.impact-card img{
+  position: relative;
+  width: 70%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.impact-container {
+  background-color: white;
+  width: 85%;
+  position: absolute;
+  padding: 5% 5%;
+  overflow: scroll;
+}
+
+.subheader {
+  font-size: 30px;
+  text-align: center;
+  padding: 5% 5%;
+}
+
+.card-text {
+  padding: 5px 5px 5px 5px;
+}
+
+
+/* --------------------
+    FEATURED PRESS
+--------------------- */
+.featured-logos {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5% 5%;
+}
+
+.featured-logos img {
+  height: 45px;
+  width: auto;
+  margin: 10px 30px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.logo {
+  justify-content: center;
+}
+
+.logo img {
+  padding: 5px;
+}
+
+.press-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-press {
+  font-size: 20px;
+  display: block;
+  margin: 30px 0px 40px 0px;
+  padding: auto;
+  border-radius: 0px;
+  max-width: 300px;
+  width: 100%;
+  border-color: #3270EC;
+  border-width: 3px;
+  color: #3270EC;
+  background-color: white;
+  transition: color .3s ease;
+}
+
+
+.btn-press:hover {
+  color: #2D55a4; 
+  text-decoration: none;
+}
+
+.chevron-press {
+  color: #3270EC;
+}
+
+.chevron-press:hover {
+  color: #2D55a4;
+}
+
+
+
+
+/* --------------------
+    RESPONSIVE
+--------------------- */
 @media (max-width: 576px) {
   .navbar {
     flex-wrap: wrap;

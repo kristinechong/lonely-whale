@@ -1,0 +1,660 @@
+/* --------------------
+    OUR MISSION
+--------------------- */
+
+.bg {
+    background: linear-gradient(60deg, rgba(18, 25, 43, 0.075), rgba(18, 25, 43, 0.089), rgba(255, 255, 255, 0.116), transparent), url("images/underwater-cropped.jpg") no-repeat top;
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    /* same height as jumbotron */
+    top: 0;
+    left: 0;
+    z-index: -5;
+    margin: 0;
+    padding: 0;
+    opacity: 0.9;
+  }
+  
+  
+  /* --------------
+        NAVBAR
+  --------------- */
+  
+  .jumbotron {
+    margin-bottom: 50px;
+    height: 600px;
+    color:#12192B;
+    background: transparent;
+    padding-top: 10px;
+    width: 100%;
+  
+  .navbar {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #12192B;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 20px 0px 35px 0px;
+  }
+  
+  .navbar-light {
+    color: #121212;
+  }
+  
+  .navbar-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 0px 10px 0px;
+  }
+  
+  .navbar-text {
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+    display: block;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+  }
+  
+  /* .navbar-toggler {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    margin: 0px 15px 0px 15px; 
+    border: 1px solid #12192B;
+  } */
+  
+  .custom-toggler.navbar-toggler {
+    border-color: #12192B;
+  }
+  
+  /* .navbar-nav {
+    margin: 0px 120px 0px 40px;
+    padding: 20px 15px 20px 15px;
+    display: -webkit-box;
+    position: relative;
+    justify-content: right;
+    width: 100%;
+    float: right;
+  } */
+  
+  .navbar-nav {
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    display: contents;
+    justify-content: right;
+    width: 100%;
+  }
+  
+  .navbar-collapse {
+    position: relative;
+    display: grid;
+    justify-content: flex-end;
+    align-content: center;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  .show {
+    background-color: white;
+    z-index: 1;
+  }
+  
+  
+  .nav-item {
+    color: #12192B;
+    position: relative;
+    display: -webkit-box;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    float: right;
+    padding: 20px 0px 20px 0px;
+    margin: 0px 0px 0px 0px; 
+    transition: color 0.3s ease-in;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #12192B;
+  }
+  
+  .navbar-light:hover .navbar-nav:hover .nav-link:hover {
+    color: #12192B;
+  }
+  
+  .nav-link {
+    color: #12192B;
+    position: relative;
+    display: -webkit-box;
+    justify-content: center;
+    background: none;
+    margin: 0px 15px 0px 10px; 
+    transition: color .3s ease;
+  }
+  
+  
+  .navbar-nav > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #12192B;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .navbar-nav a:hover:before, .navbar-nav li:hover > a:before, .navbar-nav .menu-active > a:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: all 0.3s ease;
+  }
+  
+  /* .navbar-nav ul {
+    margin: 4px 0 0 0;
+    border: 2px solid  #12192B;
+  } */
+  
+  /* .navbar-nav ul li {
+    background: #12192B;
+  } */
+  
+  /* .navbar-nav ul li:first-child {
+    border-top: 0;
+  } */
+  
+  /* .navbar-nav ul li a {
+    padding: 10px;
+    color: #12192B;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: none;
+  } */
+  
+  /* .navbar-nav ul li a:hover {
+    background: #12192B;
+    color: #12192b;;
+  } */
+  
+  /* .navbar-nav ul ul {
+    margin: 0;
+  } */
+  
+  
+  .btn-donate {
+    width: 140px;
+    height: 50px;
+    background-color: #3270EC;
+    color: #ffffff;
+    border-radius: 0px;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    float: right;
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.3s ease-in;
+  }
+  
+  .btn-donate:hover{
+    color: white;
+    background-color: #2D55a4; 
+  }
+  
+  .navbar img {
+    width: 200px;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  .card {
+    position: absolute;
+  }
+  
+  .card-hero {
+    align-content: center;
+    background: transparent;
+    border: none;
+    padding: 20px 10px 20px 10px;
+    margin: 60px 10px 10px 10px;
+  }
+  
+  .upcoming-event {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #2D55A4;
+  }
+  
+  .event-date {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px 0px 10px 0px;
+  }
+  
+    .fa-chevron-right {
+      padding: 0px 0px 0px 30px;
+      color: white;
+    }
+  
+    .fa-chevron-down {
+      padding: 0px 0px 0px 20px;
+      color: #12192B;
+    }
+  
+  .btn-get-involved {
+      font-size: 20px;
+      display: block;
+      padding: 3% 20%;
+      margin: 30px 0px 0px 0px;
+      border-radius: 0px;
+      color: #fff;
+      background-color: #3270EC;
+      width: 90%;
+      min-width: 200px;
+      transition: background-color .3s ease;
+  }
+    
+  .btn-get-involved:hover {
+    background-color: #2D55a4; 
+    color: white;
+    text-decoration: none;
+    }
+  
+  /*--------------------------------------------------------------
+        GENERAL
+  --------------------------------------------------------------*/
+  body {
+      background: #fff;
+      color: #12192B;
+      font-family: brandon-grotesque, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      background: url("images/pattern-faded.svg");
+      background-size: 125px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    a {
+      color: #12192B;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Fjalla One', sans-serif;
+      font-weight: 400;
+      margin: 0 0 0 0;
+      padding: 0;
+    }
+  
+  .header {
+    font-size: 35px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+  }
+  
+  .container {
+    background: transparent;
+    align-content: center;
+    justify-content: flex-start;
+    display: block;
+    flex-wrap: wrap;
+    animation: fade 3s ease-in 1;
+  }
+  
+  .section {
+    display: flex;
+    justify-content: center;
+    background: #e8e8e8;
+    width: 80%;
+    margin: 40px;
+  }
+  
+  .row {
+    margin: 2% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-around;
+    }
+  
+  .btn {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    min-height: 45px;
+    max-height: 50px;
+    }
+  
+  
+  /* --------------------
+      OUR MISSION
+  --------------------- */
+  .body-container{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    background-color: transparent;
+  }
+  
+  .section-container {
+    background-color: white;
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+    width: 100%;
+  }
+  
+  .mission-statement {
+    padding: 0% 2% 0% 5%;
+    font-size: 24px;
+  }
+  
+  .mission-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .mission-data {
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+  }
+  
+  .stats-header {
+    font-size: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+  }
+  
+  .row-stats {
+    height: 150px;
+    padding: 0% 5% 0% 2%;
+    width: 90%;
+  }
+  
+  /* --------------------
+      OUR STORY
+  --------------------- */
+  
+  .story img{
+    width: 70%;
+    height: 70%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .story-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* --------------------
+      OUR IMPACT
+  --------------------- */
+  
+  .btn-learn-story {
+    font-size: 20px;
+    display: block;
+    padding: auto;
+    margin: 30px 0px 30px 0px;
+    height: 50px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0px;
+    color: #fff;
+    background-color: #3270EC;
+    transition: background-color .3s ease;
+  }
+  
+  .btn-learn-story:hover{
+    color: white;
+    background-color: #2D55a4; 
+  }
+  
+  .btn-learn-impact {
+    font-size: 20px;
+    display: block;
+    padding: 1% 8%;
+    margin: 30px 0px 10px 0px;
+    height: 50px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 150px;
+    border-radius: 0px;
+    color: #fff;
+    background-color: #3270EC;
+    transition: background-color .3s ease;
+  }
+  
+  .btn-learn-impact:hover{
+    color: white;
+    background-color: #2D55a4; 
+  }
+  
+  .impact {
+    height: 100%;
+    align-items: center;
+    background: url("images/buildings.jpg") no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 500px;
+    top: 0;
+    margin: 5% 10%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+  }
+  
+  .impact-card {
+    height: 100%;
+  }
+  
+  .impact-card img{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .impact-container {
+    background-color: white;
+    width: 85%;
+    position: absolute;
+    padding: 5% 5%;
+    overflow: scroll;
+  }
+  
+  .subheader {
+    font-size: 30px;
+    text-align: center;
+    padding: 5% 5%;
+  }
+  
+  .card-text {
+    padding: 5px 5px 5px 5px;
+  }
+  
+  
+  /* --------------------
+      FEATURED PRESS
+  --------------------- */
+  .featured-logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5% 5%;
+  }
+  
+  .featured-logos img {
+    height: 45px;
+    width: auto;
+    margin: 10px 30px;
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .logo {
+    justify-content: center;
+  }
+  
+  .logo img {
+    padding: 5px;
+  }
+  
+  .press-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .btn-press {
+    font-size: 20px;
+    display: block;
+    margin: 30px 0px 40px 0px;
+    padding: auto;
+    border-radius: 0px;
+    max-width: 300px;
+    width: 100%;
+    border-color: #3270EC;
+    border-width: 3px;
+    color: #3270EC;
+    background-color: white;
+    transition: color .3s ease;
+  }
+  
+  
+  .btn-press:hover {
+    color: #2D55a4; 
+    text-decoration: none;
+  }
+  
+  .chevron-press {
+    color: #3270EC;
+  }
+  
+  .chevron-press:hover {
+    color: #2D55a4;
+  }
+  
+  
+  /* --------------------
+      FOOTER
+  --------------------- */
+  
+  
+  
+  
+  /* --------------------
+      RESPONSIVE
+  --------------------- */
+  @media (max-width: 576px) {
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .name-logo {
+      font-size: 18px;
+    }
+  
+    .header {
+      font-size: 18px;
+    }
+  
+    .about {
+      font-size: 14px;
+    }
+  
+    .container {
+      width: 100%;
+    }
+  
+    .card {
+      margin: 10px 0px 10px 0px;
+    }
+  
+    .row {
+      margin: 0px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar {
+      flex-wrap: wrap; 
+    }
+  
+    .header {
+      font-size: 24px;
+    }
+  
+    .about {
+      font-size: 20px;
+    }
+  
+    .container {
+      width: 100%;
+    }
+  
+    .card {
+      margin: 10px 0px 10px 0px;
+    }
+  
+    .row {
+      margin: 0px;
+    }
+  
+  }
