@@ -424,9 +424,16 @@ body {
     OUR STORY
 --------------------- */
 
-.story img{
+/* .story img{
   width: 70%;
   height: 70%;
+  margin: 0px;
+  padding: 0px;
+} */
+
+.story iframe{
+  width: 560px;
+  height: 315px;
   margin: 0px;
   padding: 0px;
 }
@@ -754,6 +761,11 @@ input[type="text"] {
 --------------------- */
 @media (min-width: 375px) {
 
+  .story iframe {
+    width: 186.7;
+    height: 105px;
+  }
+
   .subheader {
     font-size: 16px;
     margin: 40px 0px 10px 0px;
@@ -769,13 +781,45 @@ input[type="text"] {
   .impact {
     margin: 10px 20px 60px 20px
   }
-
   }
+
+@media (min-width: 426px) {
+.impact-container {
+  width: 90%;
+  height: 95%;
+  }
+}
+
+@media (max-width: 460px) {
+
+.story iframe {
+  width: 186.7;
+  height: 105px;
+}
+
+.impact-container {
+  width: 95%;
+  height: 95%;
+}
+}
+
+@media (min-width: 576px) {
+  .story iframe {
+    width: 373.7px;
+    height: 210px;
+  }
+
+  .impact-container {
+    width: 70%;
+    height: 70%;
+  }
+}
+
 
 @media (max-width: 576px) {
-  .navbar {
-    flex-wrap: wrap;
-  }
+.navbar {
+  flex-wrap: wrap;
+}
 
 .bg {
   linear-gradient(60deg, rgba(18, 25, 43, 0.075), rgba(18, 25, 43, 0.089), rgba(255, 255, 255, 0.116), transparent), url(images/underwater-cropped.jpg) no-repeat left;
@@ -812,31 +856,43 @@ input[type="text"] {
   height: 100%;
 }
 
+.story iframe {
+  width: 280px;
+  height: 157.5px;
+}
+
 .story-button {
   margin: 0px 0px 20px 0px;
 }
 
 .subheader {
-  font-size: 20px;
+  font-size: 18px;
   margin: 20px 0px 10px 0px;
 }
 
+.impact-container {
+  width: 85%;
+  height: 65%;
+}
+
 .card-text {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .impact {
   margin: 10px 20px 40px 20px
 }
 
+
 .btn-learn-impact {
-  font-size: 16px;
+  font-size: 12px;
   height: 30px;
+  width: 80%;
 }
 
 .btn-learn-story {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .btn-press {
@@ -984,6 +1040,7 @@ input[type="text"] {
 
 @media (min-width: 700px) {
 
+
   .subheader {
     font-size: 24px;
     margin: 10px 0px 10px 0px;
@@ -998,4 +1055,32 @@ input[type="text"] {
   .impact {
     margin: 10px 50px 60px 50px
   }
+
+}
+
+@media (min-width: 900px) {
+  .story iframe {
+    width: 616px;
+    height: 346.5px;
   }
+
+  .subheader {
+    font-size: 24px;
+    margin: 0px 0px 10px 0px;
+  }
+    
+  .card-text {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 10px 0px;
+  }
+
+  .impact-container {
+    width: 60%;
+    height: 70%;
+  }
+
+  .impact {
+    margin: 10px 30px 60px 30px
+  }
+}
